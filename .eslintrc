@@ -1,0 +1,16 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["standard", "standard-react"],
+  "rules": {
+    "react/prop-types": 0,
+    "react/jsx-curly-spacing": 0,
+    "comma-dangle": 0
+  },
+  "env": {
+    "jest": true
+  },
+  "globals": {
+    "localStorage": true,
+    "fetch": true
+  }
+}
