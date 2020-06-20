@@ -80,21 +80,19 @@ export default ({ match }) => {
                 },
                 {
                   title: 'GF.',
-                  dataIndex: 'gf',
-                  key: 'gf',
-                  render: () => <span>0</span>
+                  dataIndex: 'For',
+                  key: 'For'
                 },
                 {
                   title: 'GA.',
-                  dataIndex: 'ga',
-                  key: 'ga',
-                  render: () => <span>0</span>
+                  dataIndex: 'Against',
+                  key: 'Against'
                 },
                 {
                   title: 'GD.',
-                  dataIndex: 'gd',
-                  key: 'gd',
-                  render: () => <span>0</span>
+                  dataIndex: 'GoalDifference',
+                  key: 'GoalDifference',
+                  render: (_, cols) => <span>{cols.For - cols.Against}</span>
                 }
               ]}
             />
